@@ -1,15 +1,3 @@
-<style>
-
-.content-wrapper {
-  margin-left: min(25%);
-}
-
-.container-scroller {
-    display: flex;
-    width: 100%;
-    align-items: stretch;
-}
-</style>
 <template>
  <div class="container-scroller">
     <Sidebar></Sidebar>
