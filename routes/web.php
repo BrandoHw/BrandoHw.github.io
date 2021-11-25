@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about']);
 Route::get('/portfolio', [HomeController::class, 'portfolio']);
-Route::get('/cv', [HomeController::class, 'cb']);
+Route::get('/cv', [HomeController::class, 'cv']);
 Route::get('/contact', [HomeController::class, 'contact']);
 
 Route::get("/hello", function () {

@@ -43,7 +43,9 @@ class HomeController extends Controller
     //
     public function cv()
     {
-        return Inertia::render('Dashboard/Home');
+
+        return response()->file('storage/pdfs/cv.pdf');
+    
     }
 
     //

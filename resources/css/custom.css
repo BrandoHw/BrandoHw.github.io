@@ -1,0 +1,475 @@
+:root {
+  --main-theme: darkred;
+  --white: #ffffff;
+}
+
+/*
+* Main Content
+*/
+
+.container-fluid{
+  background-image:url("/storage/images/background/moroccan-flower.png") !important;
+  padding: 0px !important;
+}
+
+.v-application{
+  background-image:url("/storage/images/background/moroccan-flower.png") !important;
+  padding: 5px 20px 5px 10px !important;
+}
+.content-wrapper {
+    margin-left: min(25%);
+  }
+ 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: right;
+}
+
+.content > div {
+  flex: 1 1 auto;
+  /* border: 1px red solid; */
+  text-align: left;
+  font-size: 24px;
+  margin: 10px;  /* and that, will result in a 10px gap */
+}
+
+.v-expansion-panel-header{
+    font: 16px/1.6 Roboto,Helvetica,sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: white;
+    background-color: var(--main-theme);
+}
+
+.v-expansion-panel-content{
+  margin-top: 10px;
+}
+
+.v-icon{
+  color:white !important;
+}
+.project-subtitle-1{
+  text-align: left;
+  font-size: 18px;
+}
+.project-subtitle-2{
+  text-align: left;
+  font-weight: 800;
+  font-size: 18px;
+  margin: 0em 1em 1em 1em;
+  
+}
+.project-description{
+  margin: 0px 0px 10px 10px;
+  font-size: 16px;
+  text-align: left;
+  list-style-position: inside;
+}
+
+.project-tech ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.project-tech .technologies-title{
+  letter-spacing: 0.1em;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.project-tech ul li{
+  background-color: darkred;
+  color: white;
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  font-size: 12px;
+  font:1.6 Roboto,Helvetica,sans-serif;
+  font-weight: 300;
+}
+/*
+* Sidebar
+*/
+.v-sidebar-menu {
+  background-image:url("/storage/images/background/trees-min.jpg") !important;
+  background-color: rgba(121, 5, 5, 0.9) !important;
+  background-blend-mode: multiply !important;
+  text-transform: uppercase !important;
+  z-index: 5 !important;
+}
+.v-sidebar-menu .vsm--title {
+  padding-left: 40px !important;
+}
+.v-sidebar-menu .vsm--item{
+    font: 12px/1.6 Roboto,Helvetica,sans-serif !important;
+    font-weight: 100 !important;
+    color:rgba(255, 255, 255, 0.6) !important;
+}
+.v-sidebar-menu .vsm--link{
+    padding: 5px !important;
+}
+
+.v-sidebar-menu .vsm--link_level-1.vsm--link_exact-active, .v-sidebar-menu .vsm--link_level-1.vsm--link_active {
+  box-shadow: 3px 0px 0px 0px #ffffff inset !important;
+}
+.header-img {
+    width: 45%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+.header-sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+    font: 16px/1.6 Roboto,Helvetica,sans-serif;
+    margin-bottom: 20%;
+
+}
+
+.sidebar-header-title{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.sidebar-header-subtitle{
+    font-weight: 100;
+    font-size: 16px;
+}
+
+/*
+* Sidebar Footer
+*/
+.icons-container {
+  margin: 20% 30px 30px 40px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10%;
+  /* border: 1px red solid; */
+
+  padding: 5px; /* this */
+}
+
+.icons-container > div {
+  flex: 0 1 auto;
+  /* border: 1px red solid; */
+  text-align: center;
+  font-size: 24px;
+  margin: 5px;  /* and that, will result in a 10px gap */
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  /* CSS */
+  
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  /* CSS */
+  /* Main Content */
+  .v-expansion-panel-header{
+      font: 20px/1.6 Roboto,Helvetica,sans-serif !important;
+      font-weight: 400 !important;
+  }
+  .project-subtitle-1{
+    text-align: left;
+    font-size: 12px;
+  }
+  .project-subtitle-2{
+    text-align: left;
+    font-weight: 800;
+    font-size: 12px;
+    margin: 0em 1em 1em 1em;
+    
+  }
+  .project-description{
+    margin: 0px 0px 10px 10px;
+    font-size: 12px;
+    list-style-position: inside;
+  }
+  
+  .project-tech ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  .project-tech .technologies-title{
+    letter-spacing: 0.1em;
+    font-size: 10px;
+  }
+
+  .project-tech ul li{
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    font-size: 10px;
+  }
+
+  /* Sidebar */
+  .v-sidebar-menu .vsm--title {
+    padding-left: 20px !important;
+    font: 12px/1.6 Roboto,Helvetica,sans-serif !important;
+  }
+  .v-sidebar-menu .vsm--link{
+      padding: 5px;
+  }
+  .header-sidebar {
+      font: 12px/1.6 Roboto,Helvetica,sans-serif !important;
+      margin-bottom: 20px;
+  }
+  .sidebar-header-title{
+      font-size: 16px;
+  }
+  .sidebar-header-subtitle{
+      font-weight: 300;
+      font-size: 10px;
+  }
+
+  /* Sidebar Footer */
+  .icons-container {
+    margin: 20px;
+    padding: 5px; /* this */
+  }
+  
+  .icons-container > div {
+    flex: 0 1 auto;
+    /* border: 1px red solid; */
+    text-align: center;
+    font-size: 18px;
+    margin: 5px;  /* and that, will result in a 10px gap */
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  /* Main Content */
+  .content > div {
+    flex: 1 1 auto;
+    /* border: 1px red solid; */
+    text-align: center;
+    font-size: 12px !important;
+    margin: 10px;  /* and that, will result in a 10px gap */
+  }
+  
+  .v-expansion-panel-header{
+      font: 16px/1.6 Roboto,Helvetica,sans-serif !important;
+      font-weight: 400 !important;
+  }
+  .project-subtitle-1{
+    text-align: left;
+    font-size: 12px;
+  }
+  .project-subtitle-2{
+    text-align: left;
+    font-weight: 800;
+    font-size: 10px;
+    margin: 0em 1em 1em 1em;
+    
+  }
+  .project-description{
+    margin: 0px 0px 10px 10px;
+    font-size: 10px;
+    list-style-position: inside;
+  }
+  
+  .project-tech ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  .project-tech .technologies-title{
+    letter-spacing: 0.1em;
+    font-size: 8px;
+  }
+
+  .project-tech ul li{
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    font-size: 8px;
+  }
+
+  /* Sidebar */
+  .v-sidebar-menu .vsm--title {
+    padding-left: 20px !important;
+    font: 12px/1.6 Roboto,Helvetica,sans-serif !important;
+  }
+  .v-sidebar-menu .vsm--link{
+      padding: 5px;
+  }
+  .header-sidebar {
+      font: 12px/1.6 Roboto,Helvetica,sans-serif !important;
+      margin-bottom: 20px;
+  }
+  .sidebar-header-title{
+      font-size: 16px;
+  }
+  .sidebar-header-subtitle{
+      font-weight: 300;
+      font-size: 10px;
+  }
+
+  /* Sidebar Footer */
+  .icons-container {
+    margin: 20px;
+    padding: 5px; /* this */
+  }
+  
+  .icons-container > div {
+    flex: 0 1 auto;
+    /* border: 1px red solid; */
+    text-align: center;
+    font-size: 18px;
+    margin: 5px;  /* and that, will result in a 10px gap */
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* CSS */
+  /* Main Content */
+  .content-wrapper {
+    margin-left: min(0%);
+  }
+  .v-expansion-panel-header{
+      font: 12px/1.6 Roboto,Helvetica,sans-serif !important;
+      font-weight: 400 !important;
+  }
+  .project-subtitle-1{
+    text-align: left;
+    font-size: 8px;
+  }
+  .project-subtitle-2{
+    text-align: left;
+    font-weight: 800;
+    font-size: 6px;
+    margin: 0em 1em 1em 1em;
+    
+  }
+  .project-description{
+    margin: 0px 0px 10px 10px;
+    font-size: 6px;
+    list-style-position: inside;
+  }
+  
+  .project-tech ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  .project-tech .technologies-title{
+    letter-spacing: 0.1em;
+    font-size: 6px;
+  }
+
+  .project-tech ul li{
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    font-size: 6px;
+  }
+   /* Sidebar */
+  .v-sidebar-menu{
+    display: none !important;
+  }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  /* CSS */
+  /* Main Content */
+  .content-wrapper {
+    margin-left: min(0%);
+  }
+  .v-expansion-panel-header{
+      font: 14px/1.6 Roboto,Helvetica,sans-serif !important;
+      font-weight: 400 !important;
+  }
+  .project-subtitle-1{
+    text-align: left;
+    font-size: 10px;
+  }
+  .project-subtitle-2{
+    text-align: left;
+    font-weight: 800;
+    font-size: 8px;
+    margin: 0em 1em 1em 1em;
+    
+  }
+  .project-description{
+    margin: 0px 0px 10px 10px;
+    font-size: 8px;
+    list-style-position: inside;
+  }
+  
+  .project-tech ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  .project-tech .technologies-title{
+    letter-spacing: 0.1em;
+    font-size: 8px;
+  }
+
+  .project-tech ul li{
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    font-size: 8px;
+  }
+  
+  /* Sidebar */
+  .v-sidebar-menu{
+    display: none !important;
+  }
+  
+  
+}
