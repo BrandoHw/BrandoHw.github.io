@@ -1,5 +1,6 @@
 <template>
  <div class="container-scroller">
+    <MobileHeader></MobileHeader>
     <Sidebar></Sidebar>
 
     <div class="container-fluid page-body-wrapper">
@@ -16,8 +17,9 @@
 
 <script>
 import Sidebar from '@/Pages/Layout/Sidebar'
+import MobileHeader from '@/Pages/Layout/MobileHeader'
 export default {
-    components:{Sidebar},
+    components:{Sidebar, MobileHeader},
     methods: {
 
     },

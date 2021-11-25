@@ -1,36 +1,7 @@
-<style>
-
-.v-sidebar-menu .vsm--title {
-  padding-left: 50px;
-}
-
-.header-img {
-    width: 60%;
-}
-.header-sidebar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color:white;
-    font: 16px/1.6 Roboto,Helvetica,sans-serif;
-}
-
-.sidebar-header-title{
-    font-weight: 500;
-    font-size: 22px;
-}
-
-.sidebar-header-subtitle{
-    font-weight: 300;
-    font-size: 16px;
-}
-</style>
-
 <template>
-<div>
-  <SidebarMenu :menu="menu" :hideToggle="hideToggle" width='25%'/>
-  </div>
+    <div>
+        <SidebarMenu :menu="menu" :hideToggle="hideToggle" width='25%'/>
+    </div>
 </template>
 
 <script>
@@ -71,7 +42,7 @@ export default {
               },
               {
                   href: '/about',
-                  title: 'About',
+                  title: 'About Me',
               },
               {
                   href: '/portfolio',
