@@ -28,4 +28,4 @@ Route::get("/hello", function () {
     return inertia("Hello");
 });
 
-Route::get('/test', [HomeController::class, 'test']);
+Route::get('/testingroute', [HomeController::class, 'test']);
