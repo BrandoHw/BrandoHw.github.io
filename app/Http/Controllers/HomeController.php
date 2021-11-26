@@ -23,15 +23,13 @@ class HomeController extends Controller
     public function portfolio()
     {
      
-        $directories = Storage::directories("public/images/portfolio");
-    
+        $directories = Storage::disk('public_heroku')->directories("images/portfolio");
         $carousel_images = [];
         foreach ($directories as $directory){
-            $images = Storage::files($directory);
-            $folder_name = str_replace("public/images/portfolio/", "", $directory);
+            $images = Storage::disk('public_heroku')->files($directory);
+            $folder_name = str_replace("images/portfolio/", "", $directory);
             $carousel_images[$folder_name] = [];
             foreach ($images as $image){
-                $image = Storage::url($image);
                 array_push($carousel_images[$folder_name], $image);
             }
         }
@@ -55,15 +53,14 @@ class HomeController extends Controller
     }
 
     public function test(){
-        $directories = Storage::directories("public/images/portfolio");
+        $directories = Storage::disk('public_heroku')->directories("images/portfolio");
     
         $files = [];
         foreach ($directories as $directory){
-            $images = Storage::files($directory);
-            $folder_name = str_replace("public/images/portfolio/", "", $directory);
+            $images = Storage::disk('public_heroku')->files($directory);
+            $folder_name = str_replace("images/portfolio/", "", $directory);
             $files[$folder_name] = [];
             foreach ($images as $image){
-                $image = Storage::url($image);
                 array_push($files[$folder_name], $image);
             }
         }
