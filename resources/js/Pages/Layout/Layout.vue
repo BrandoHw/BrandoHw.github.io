@@ -1,30 +1,23 @@
 <template>
- <div class="container-scroller">
-    <MobileHeader></MobileHeader>
-    <Sidebar></Sidebar>
+<div>
+    <div class="container-scroller">
+        <mobile-header></mobile-header>
+        <sidebar></sidebar>
 
-    <div class="container-fluid page-body-wrapper">
-  
-      <!-- partial -->
-     
-          <slot></slot>
+        <div class="container-fluid page-body-wrapper">
     
-      <!-- main-panel ends -->
+            <slot/>
+
+        </div>
     </div>
 </div>
-
 </template>
 
 <script>
 import Sidebar from '@/Pages/Layout/Sidebar'
 import MobileHeader from '@/Pages/Layout/MobileHeader'
+
 export default {
     components:{Sidebar, MobileHeader},
-    methods: {
-
-    },
-    mounted() {
-      
-    }
 };
 </script>
