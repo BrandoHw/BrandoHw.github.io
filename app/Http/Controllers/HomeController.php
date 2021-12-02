@@ -17,7 +17,7 @@ class HomeController extends Controller
     public function about()
     {
 
-        return Inertia::render('Dashboard/Home');
+        return Inertia::render('Content/About');
     }
 
     public function portfolio()
@@ -42,14 +42,14 @@ class HomeController extends Controller
     public function cv()
     {
 
-        return response()->file('storage/pdfs/cv.pdf');
+        return response()->file('pdfs/cv.pdf');
     
     }
 
     //
     public function contact()
     {
-        return Inertia::render('Dashboard/Index');
+        return Inertia::render('Content/Contact');
     }
 
     public function test(){
