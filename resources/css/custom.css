@@ -2,18 +2,35 @@
   --main-theme: darkred;
   --white: #ffffff;
 }
+/*
+* Transition Animation
+*/
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateY(1000px);
+  opacity: 0;
+}
+
 
 /*
 * Main Content
 */
 
 .container-fluid{
-  background-image:url("/storage/images/background/moroccan-flower.png") !important;
   padding: 0px !important;
 }
 
 .v-application{
-  background-image:url("/storage/images/background/moroccan-flower.png") !important;
+  background-image:url("/images/background/moroccan-flower.png") !important;
   padding: 5px 20px 5px 10px !important;
 }
 .content-wrapper {
@@ -47,7 +64,7 @@
   margin-top: 10px;
 }
 
-.v-icon{
+.v-icon.mdi-chevron-down{
   color:white !important;
 }
 .project-subtitle-1{
@@ -89,11 +106,58 @@
   font:1.6 Roboto,Helvetica,sans-serif;
   font-weight: 300;
 }
+
+/*
+* Contact Page
+*/
+
+.contact-card{
+  padding:50px;
+  font-size: 20px;
+}
+
+.contact-title{
+  text-align: left;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+dl {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0
+}
+dt {
+  text-align: left;
+  float: left;
+  width: 25%;
+  /* adjust the width; make sure the total of both is 100% */
+  padding: 0;
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+dd {
+  text-align: left;
+  float: left;
+  width: 75%;
+  /* adjust the width; make sure the total of both is 100% */
+  padding: 0;
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+
+
+
 /*
 * Sidebar
 */
+
+
 .v-sidebar-menu {
-  background-image:url("/storage/images/background/trees-min.jpg") !important;
+  /* background-image:url("/storage/images/background/trees-min.jpg") !important; */
   background-color: rgba(121, 5, 5, 0.9) !important;
   background-blend-mode: multiply !important;
   text-transform: uppercase !important;
@@ -101,6 +165,7 @@
 }
 .v-sidebar-menu .vsm--title {
   padding-left: 40px !important;
+  color: rgba(255, 255, 255, 0.6);
 }
 .v-sidebar-menu .vsm--item{
     font: 12px/1.6 Roboto,Helvetica,sans-serif !important;
@@ -113,6 +178,11 @@
 
 .v-sidebar-menu .vsm--link_level-1.vsm--link_exact-active, .v-sidebar-menu .vsm--link_level-1.vsm--link_active {
   box-shadow: 3px 0px 0px 0px #ffffff inset !important;
+}
+
+.link--active .vsm--title{
+  font-weight: 700;
+  color:white;
 }
 .header-img {
     width: 45%;
@@ -127,7 +197,7 @@
     flex-direction: column;
     color:white;
     font: 16px/1.6 Roboto,Helvetica,sans-serif;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
 
 }
 
@@ -140,6 +210,11 @@
     font-weight: 100;
     font-size: 16px;
 }
+
+a:hover{
+  text-decoration: none;
+}
+
 
 /*
 * Sidebar Footer
@@ -161,6 +236,11 @@
   text-align: center;
   font-size: 24px;
   margin: 5px;  /* and that, will result in a 10px gap */
+}
+
+/*Mobile Header*/
+.v-app-bar{
+  display: none !important;
 }
 
 /* 
@@ -346,6 +426,21 @@
     font-size: 18px;
     margin: 5px;  /* and that, will result in a 10px gap */
   }
+
+  /*
+  * Contact Page
+  */
+
+  .contact-card{
+    padding:30px;
+    font-size: 16px;
+  }
+
+  .contact-title{
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+
   
 }
 
@@ -413,6 +508,26 @@
   .v-sidebar-menu{
     display: none !important;
   }
+
+   /*Mobile Header*/
+   .v-app-bar{
+    display: block !important;
+  }
+
+  /*
+  * Contact Page
+  */
+
+  .contact-card{
+    padding:30px;
+    font-size: 10px !important;
+  }
+
+  .contact-title{
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
   
 }
 
@@ -421,7 +536,7 @@
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   
   /* CSS */
   /* Main Content */
@@ -471,5 +586,25 @@
     display: none !important;
   }
   
+  /*Mobile Header*/
+  .v-app-bar{
+    display: block !important;
+  }
+
+  /*
+  * Contact Page
+  */
+
+  .contact-card{
+    padding:30px;
+    font-size: 9px !important;
+  }
+
+  .contact-title{
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
   
 }
+

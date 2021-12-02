@@ -3,6 +3,7 @@
   <a :href="hrefLink">
     <span :class="containerClass">
       <i v-bind:class="iconClass"></i>
+      <slot></slot>
     </span>
   </a>
 </div>
